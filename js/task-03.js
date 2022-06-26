@@ -14,8 +14,8 @@ const images = [
 ];
 
 const galleryEl = document.querySelector('.gallery');
-n;
-const elemets = images.map(
+
+const elements = images.map(
   image =>
     `<li class="item"
  style="display: inline-flex;
