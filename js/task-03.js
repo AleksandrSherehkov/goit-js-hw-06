@@ -13,4 +13,19 @@ const images = [
   },
 ];
 
-adsadsadas;
+const galleryEl = document.querySelector('.gallery');
+const elements = images.map(
+  image =>
+    `<li class="item"
+ style="display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ margin-right: 25px;">
+ <img class="image"
+ src="${image.url}"
+ alt="${image.alt}"
+ width="350"
+ height="250"></li>`
+);
+
+galleryEl.insertAdjacentHTML('beforeend', elements.join(''));
