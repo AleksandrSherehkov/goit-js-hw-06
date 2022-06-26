@@ -13,9 +13,9 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector('.gallery');
-
-const elements = images.map(
+const galleryEl = document.querySelector('.gallery');
+n;
+const elemets = images.map(
   image =>
     `<li class="item"
  style="display: inline-flex;
@@ -29,4 +29,4 @@ const elements = images.map(
  height="250"></li>`
 );
 
-gallery.insertAdjacentHTML('beforeend', elements.join(''));
+galleryEl.insertAdjacentHTML('beforeend', elements.join(''));
