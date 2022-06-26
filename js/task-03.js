@@ -13,7 +13,7 @@ const images = [
   },
 ];
 
-const galleryEl = document.querySelector('.gallery');
+const gallery = document.querySelector('.gallery');
 
 const elements = images.map(
   image =>
@@ -21,12 +21,12 @@ const elements = images.map(
  style="display: inline-flex;
  align-items: center;
  justify-content: center;
- margin-right: 30px;">
+ margin-right: 25px;">
  <img class="image"
  src="${image.url}"
  alt="${image.alt}"
- width="400"
- height="270"></li>`
+ width="350"
+ height="250"></li>`
 );
 
-galleryEl.insertAdjacentHTML('beforeend', elements.join(''));
+gallery.insertAdjacentHTML('beforeend', elements.join(''));
